@@ -53,22 +53,28 @@ const AboutPage = () => {
 
   const team = [
     {
-      name: 'Dr. Priya Mishra',
-      role: 'Medical Advisor',
-      bio: 'MBBS, MD - General Medicine. 15+ years experience in rural healthcare.',
-      avatar: 'https://placehold.co/300x300/e3f2fd/1976d2?text=PM'
+      name: 'Hritick Ghosh',
+      avatar: '/team/hritick ghosh.jpeg'
     },
     {
-      name: 'Rohit Patel',
-      role: 'AI Engineer',
-      bio: 'PhD in AI/ML. Former researcher at IIT Bhubaneswar.',
-      avatar: 'https://placehold.co/300x300/e0f7fa/006064?text=RP'
+      name: 'Nitesh Jha',
+      avatar: '/team/nitesh jha.jpg'
     },
     {
-      name: 'Anita Sharma',
-      role: 'Product Manager',
-      bio: 'MBA, 10+ years in healthcare technology and product development.',
-      avatar: 'https://placehold.co/300x300/e8f5e8/388e3c?text=AS'
+      name: 'Rohit Kumar',
+      avatar: '/team/rohit kumar.jpeg'
+    },
+    {
+      name: 'Samrat Majhi',
+      avatar: '/team/samrat majhi.jpeg'
+    },
+    {
+      name: 'Somsubra Ghosh',
+      avatar: '/team/somsubra ghosh.jpeg'
+    },
+    {
+      name: 'Srinjoyee Mondal',
+      avatar: '/team/srinjoyee mondal.jpeg'
     }
   ];
 
@@ -240,35 +246,31 @@ const AboutPage = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {team.map((member, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
                 viewport={{ once: true }}
-                className="bg-white dark:bg-slate-800/60 border border-transparent dark:border-slate-700/50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group hover:scale-105"
+                className="overflow-hidden bg-white dark:bg-slate-800/60 border border-gray-100 dark:border-slate-700/50 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 text-center"
               >
-                <div className="relative mb-6">
+                <div className="relative aspect-square w-full overflow-hidden bg-slate-100 dark:bg-slate-900">
                   <Image
                     src={member.avatar}
                     alt={member.name}
-                    className="w-24 h-24 rounded-full mx-auto shadow-lg border border-teal-100/50 dark:border-teal-900/30"
-                    width={96}
-                    height={96}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-teal-500/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-blue-600 dark:text-cyan-400 font-medium mb-3">
-                  {member.role}
-                </p>
-                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                  {member.bio}
-                </p>
+                <div className="p-5">
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white tracking-wide transition-colors duration-300 group-hover:text-teal-600 dark:group-hover:text-cyan-400">
+                    {member.name}
+                  </h3>
+                </div>
               </motion.div>
             ))}
           </div>
