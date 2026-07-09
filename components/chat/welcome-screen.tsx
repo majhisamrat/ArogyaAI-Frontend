@@ -125,7 +125,7 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
           className="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-slate-100/80 dark:bg-slate-850/80 border border-slate-200/50 dark:border-slate-800 rounded-full text-[10px] sm:text-xs font-bold text-slate-405 text-slate-500 dark:text-slate-400 select-none"
         >
           <ShieldCheckIcon className="w-4 h-4 text-emerald-500 shrink-0" />
-          <span>HIPAA Secure &amp; End-to-End Encrypted Patient Portal</span>
+          <span> End-to-End Encrypted Patient Portal</span>
         </motion.div>
       </div>
     </div>

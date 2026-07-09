@@ -53,29 +53,31 @@ const AboutPage = () => {
 
   const team = [
     {
-      name: 'Hritick Ghosh',
+      name: 'Hrithik Ghosh',
       avatar: '/team/hritick ghosh.jpeg'
     },
     {
+      name: 'Samrat Majhi',
+      avatar: '/team/iam.jpeg'
+    },
+    {
+      name: 'Srinjoyee Mondal',
+      avatar: '/team/srinjoyee mondal.jpeg'
+    },
+    {
       name: 'Nitesh Jha',
-      avatar: '/team/nitesh jha.jpg'
+      avatar: '/team/nitesh jha.jpeg'
     },
     {
       name: 'Rohit Kumar',
       avatar: '/team/rohit kumar.jpeg'
     },
+    
     {
-      name: 'Samrat Majhi',
-      avatar: '/team/samrat majhi.jpeg'
-    },
-    {
-      name: 'Somsubra Ghosh',
+      name: 'Somshuvra Ghosh',
       avatar: '/team/somsubra ghosh.jpeg'
     },
-    {
-      name: 'Srinjoyee Mondal',
-      avatar: '/team/srinjoyee mondal.jpeg'
-    }
+
   ];
 
   return (
@@ -95,7 +97,7 @@ const AboutPage = () => {
               </span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              We're on a mission to make healthcare accessible to everyone in Odisha through 
+              We're on a mission to make healthcare accessible to everyone in India through 
               AI-powered assistance that speaks your language and understands your needs.
             </p>
           </motion.div>
@@ -110,7 +112,7 @@ const AboutPage = () => {
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Our Mission</h2>
                 <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-6">
-                  Healthcare accessibility remains a challenge in many parts of Odisha. 
+                  Healthcare accessibility remains a challenge in many parts of India. 
                   Arogya AI bridges this gap by providing instant, reliable health guidance 
                   through platforms everyone already uses - WhatsApp and the web.
                 </p>
@@ -156,8 +158,7 @@ const AboutPage = () => {
               What Makes Us Different
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              We're not just another health app. We're your trusted healthcare companion 
-              built specifically for Odisha.
+              We're not just another health app. We're your trusted healthcare companion.
             </p>
           </motion.div>
 
@@ -201,7 +202,7 @@ const AboutPage = () => {
                 Impact by Numbers
               </h2>
               <p className="text-blue-100 text-lg">
-                See how we're making a difference in Odisha's healthcare landscape
+                See how we're making a difference in India's healthcare landscape
               </p>
             </div>
 
@@ -242,7 +243,7 @@ const AboutPage = () => {
               Meet Our Team
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Healthcare professionals and technologists working together to serve Odisha
+              The dedicated people behind Arogya AI, working to make every health journey easier and more accessible for India.
             </p>
           </motion.div>
 
@@ -292,7 +293,7 @@ const AboutPage = () => {
               Our Vision for Healthcare
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              We envision a future where every person in Odisha has access to immediate, 
+              We envision a future where every person in India has access to immediate, 
               reliable healthcare guidance regardless of their location, language, or 
               economic background. Through AI technology, we're making this vision a reality.
             </p>

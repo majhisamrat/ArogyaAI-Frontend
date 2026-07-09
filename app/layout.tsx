@@ -4,6 +4,7 @@ import { Manrope } from 'next/font/google';
 import Script from 'next/script';
 import { SWRConfig } from 'swr';
 import Navbar from '@/components/navbar';
+import Footer from '@/components/footer';
 import { ThemeProvider } from '@/contexts/theme-context';
 import { LanguageProvider } from '@/contexts/language-context';
 import { OrganizationStructuredData, WebsiteStructuredData, HealthServiceStructuredData } from '@/components/seo/structured-data';
@@ -127,6 +128,7 @@ export default function RootLayout({
                 <main id="main-content" className="flex-1">
                   {children}
                 </main>
+                <Footer />
               </div>
             </SWRConfig>
           </LanguageProvider>

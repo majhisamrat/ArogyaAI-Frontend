@@ -202,7 +202,7 @@ const ContactPage = () => {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Get in Touch</h2>
               <p className="text-gray-600 dark:text-gray-300 mb-8">
-                We're committed to providing the best healthcare assistance to the people of Odisha. 
+                We're committed to providing the best healthcare assistance to the people of India. 
                 Your feedback and questions help us improve our services.
               </p>
             </div>
@@ -219,7 +219,7 @@ const ContactPage = () => {
                     href="mailto:baaghinitesh@gmail.com"
                     className="text-gray-600 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                   >
-                    baaghinitesh@gmail.com
+                    work.samrat24@gmail.com
                   </a>
                   <p className="text-sm text-gray-500 dark:text-gray-400">We'll respond within 24 hours</p>
                 </div>
@@ -232,10 +232,10 @@ const ContactPage = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Phone / WhatsApp</h3>
                   <a
-                    href="tel:+918274820374"
+                    href="tel:+916291324785"
                     className="text-gray-600 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                   >
-                    +91 82748 20374
+                    +91 6291324785 
                   </a>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Available for health assistance</p>
                 </div>
